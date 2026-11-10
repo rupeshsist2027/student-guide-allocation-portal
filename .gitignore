@@ -1,0 +1,44 @@
+# Dependencies & Build Outputs
+node_modules/
+dist/
+backend/target/
+*.jar
+*.war
+
+# Environment & Local Secrets (NEVER commit real credentials)
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+backend/src/main/resources/application-local.properties
+backend/src/main/resources/application-local.yml
+
+# Database Backups & Local SQL Dumps (contain student/faculty emails and password hashes)
+backups/
+*.sql
+!backend/src/main/resources/schema.sql
+*.bak
+*.dump
+
+# Certificates, Private Keys & Credential Bundles
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.jks
+*.keystore
+credentials*.json
+*secret*.json
+
+# Logs, Temp & OS/IDE/Deploy Tooling Files
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml
+.vercel/
+

@@ -1,0 +1,13 @@
+target/
+.env
+.env.*
+*.log
+*.sql
+!src/main/resources/schema.sql
+*.pem
+*.key
+*.p12
+*.jks
+.idea/
+*.iml
+
